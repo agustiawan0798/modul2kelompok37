@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/seagreen"
+    tools:context="com.example.mypc.aplikasimodul2kel37.AboutActivity">
+
+    <ImageView
+        android:id="@+id/fotoagus"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/agus" />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cardView"
+        style="@style/CardView.Light"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fotoagus"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="327dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/namaagus"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="103dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="128dp"
+                android:text="@string/nameabout1"
+                android:textColor="#46A346"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nimagus"
+                android:layout_width="117dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/nimabout1"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/namaagus"
+                app:layout_constraintStart_toStartOf="@+id/namaagus"
+                app:layout_constraintTop_toBottomOf="@+id/namaagus"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/fotosaskia"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/fotoagus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fotoagus"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:srcCompat="@drawable/saskia" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        style="@style/CardView.Light"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/fotosaskia">
+
+        <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/namasaskia"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="96dp"
+                android:text="@string/nameabout2"
+                android:textColor="#46A346"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nimsaskia"
+                android:layout_width="156dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/nimabout2"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/namasaskia"
+                app:layout_constraintStart_toStartOf="@+id/namasaskia"
+                app:layout_constraintTop_toBottomOf="@+id/namasaskia"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>
